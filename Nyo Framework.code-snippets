@@ -1,0 +1,118 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	
+	// MODULE ANIM
+	"NyoFw: carregarObjeto": {
+		"scope": "lua",
+		"prefix": "carregar",
+		"body": "NyoFw.carregarObjeto(emoteDict,emoteAnim,emote.prop,emote.flag,emote.hand,emote.pos[1],emote.pos[2],emote.pos[3],emote.pos[4],emote.pos[5],emote.pos[6])"
+	},
+
+	"NyoFw: deleteObject": {
+		"scope": "lua",
+		"prefix": "deleteobject",
+		"body": "NyoFw.deleteObject"
+	},
+
+	"NyoFw: playAnimByName": {
+		"scope": "lua",
+		"prefix": "playanimbyname",
+		"body": "NyoFw.playAnimByName(nomeAnim)",
+	},
+
+	"NyoFw: blockAnim": {
+		"scope": "lua",
+		"prefix": "blockAnim",
+		"body": "TriggerEvent('nyo_modules:blockAnim', bool)",
+	},
+
+	//MODULE CHARACTER
+	"NyoFw: getCharId": {
+		"scope": "lua",
+		"prefix": "getcharid",
+		"body": "NyoFw.getCharId(source)"
+	},
+
+	//MODULE INVENTORY
+	"NyoFw: getItemName": {
+		"scope": "lua",
+		"prefix": "getitemname",
+		"body": "NyoFw.getItemName(index, args)"
+	},
+	
+	"NyoFw: getItemIndex": {
+		"scope": "lua",
+		"prefix": "getitemindex",
+		"body": "NyoFw.getItemIndex(index)"
+	},
+
+	"NyoFw: getItemWeight": {
+		"scope": "lua",
+		"prefix": "getitemweight",
+		"body": "NyoFw.getItemWeight(item)"
+	},
+
+	"NyoFw: setChestData": {
+		"scope": "lua",
+		"prefix": "setchestdata",
+		"body": "NyoFw.setChestData(type, data, dataChest, item, amount, hash, itemData)"
+	},
+	
+
+	//NOTIFY
+	"NyoFw: Notify via Server":{
+		"scope": "lua",
+		"prefix": "notifyserver",
+		"body": "TriggerClientEvent('nyo_notify', src, tipo, msg, cor, delay, icon)"
+	},
+
+	"NyoFw: Notify via Client":{
+		"scope": "lua",
+		"prefix": "notifyclient",
+		"body": "TriggerEvent('nyo_notify', tipo, msg, cor, delay, icon)"
+	},
+	
+
+	//NYO
+	"NyoFw: registerModule": {
+		"scope": "lua",
+		"prefix": "registermodule",
+		"body": [
+			"NyoModules.registerModule(function()",
+			"\t--suas funções aqui",
+			"end)"
+		]
+	},
+
+	"NyoFw: registerNuiCallback":{
+		"scope": "lua",
+		"prefix": "registernuicallback",
+		"body": [
+			"NyoModulesClient.registerNUICallback('nuiCallback', function(data,cb)",
+			"\t--código",
+			"end)"
+		]
+	}
+
+	
+
+	
+	
+
+
+}
